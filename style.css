@@ -1,0 +1,925 @@
+* {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    text-decoration: none;
+    box-sizing: border-box;
+}
+
+:focus,
+:active {
+    outline: none;
+}
+
+a:focus,
+a:active {
+    outline: none;
+}
+
+nav,
+footer,
+header,
+aside {
+    display: block;
+}
+
+:root {
+    --font-family: "Roboto", sans-serif;
+}
+
+input,
+button,
+textarea {
+    font-family: inherit;
+}
+
+input::-ms-clear {
+    display: none;
+}
+
+button {
+    cursor: pointer;
+}
+
+button::-moz-focus-inner {
+    padding: 0;
+    border: 0;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul li {
+    list-style: none;
+}
+
+img {
+    vertical-align: top;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-size: inherit;
+    font-weight: 400;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--font-family);
+    color: #230b59;
+    overflow-x: hidden;
+}
+
+.container {
+    width: min(1200px, 100%);
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 86px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.header__img {
+    width: 145px;
+    height: auto;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 48px;
+}
+
+.nav-list__item {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 169%;
+    color: #230b59;
+    transition: color 0.2s ease;
+}
+
+.nav-list__item:hover {
+    color: #4840bb;
+}
+
+.header__btns {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.btns__button-one {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+    color: #4840bb;
+    border: 1px solid #4840bb;
+    border-radius: 8px;
+    padding: 12px;
+    background: transparent;
+}
+
+.btns__button-two {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+    border-radius: 6px;
+    max-width: 120px;
+    width: 120px;
+    height: 45px;
+    background: #4840bb;
+}
+
+.btns__button-one,
+.btns__button-two,
+.right__button,
+.div-buttons__first,
+.div-buttons__second {
+    transition: background-color 0.2s ease, color 0.2s ease, transform 0.2s ease;
+}
+
+.btns__button-one:hover,
+.div-buttons__second:hover {
+    background: #f0efff;
+}
+
+.btns__button-two:hover,
+.right__button:hover,
+.div-buttons__first:hover {
+    background: #342e9b;
+    transform: translateY(-2px);
+}
+
+.section-one {
+    padding-top: 40px;
+    padding-bottom: 72px;
+}
+
+.section-one__div-top {
+    display: flex;
+}
+
+.div-top__left {
+    flex: 1 1 62%;
+    margin-right: 48px;
+    max-width: 745px;
+    max-height: 559px;
+
+}
+
+.div-top__left img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.div-top__image {
+    width: 100%;
+    height: auto;
+}
+
+.section-one__right {
+    flex: 1 1 38%;
+    margin: 139px 0 0 0;
+}
+
+.right__tittle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 114%;
+    letter-spacing: 0.04em;
+    color: #230b59;
+    margin-bottom: 40px;
+}
+
+.right__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 144%;
+    color: #230b59;
+    margin-bottom: 40px;
+}
+
+.right__button {
+    background: #4840bb;
+    border-radius: 6px;
+    max-width: 120px;
+    height: 45px;
+    width: 120px;
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+
+}
+
+.section-one__list-bottom {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    gap: 24px;
+}
+
+.list-bottom__item {
+    margin: 32px 0;
+    min-width: 0;
+}
+
+.item__img,
+.item__image {
+    max-width: 100%;
+    margin-bottom: 8px;
+}
+
+.item__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 160%;
+    color: #230b59;
+}
+
+.item__tittle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 27px;
+    line-height: 117%;
+    letter-spacing: 0.04em;
+    color: #230b59;
+}
+
+.section-two {
+    display: flex;
+    align-items: center;
+    gap: 70px;
+    min-height: 700px;
+    padding-top: 70px;
+    padding-bottom: 100px;
+    background: #f7f7fc;
+}
+
+.section-two__left {
+    flex: 0 1 42%;
+}
+
+.left__tittle {
+    font-family: var(--font-family);
+    font-size: 48px;
+    line-height: 112%;
+    color: #230b59;
+    margin-bottom: 28px;
+}
+
+.left__text {
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 160%;
+    color: #5b5870;
+    margin-bottom: 32px;
+}
+
+.left__div-buttons {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.div-buttons__first,
+.div-buttons__second {
+    min-height: 45px;
+    padding: 0 20px;
+    border-radius: 6px;
+    font-family: var(--font-family);
+    font-size: 15px;
+    font-weight: 700;
+}
+
+.div-buttons__first {
+    color: #fff;
+    background: #4840bb;
+}
+
+.div-buttons__second {
+    color: #4840bb;
+    border: 1px solid #4840bb;
+    background: transparent;
+}
+
+.section-two__right {
+    position: relative;
+    flex: 1 1 58%;
+    min-width: 0;
+    position: relative;
+
+}
+
+.right__image {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
+.right__send-one,
+.right__send-two {
+    position: absolute;
+    z-index: 1;
+    padding: 18px 22px;
+    border-radius: 8px;
+    background: #fff;
+    box-shadow: 0 12px 30px rgba(35, 11, 89, 0.14);
+}
+
+.right__send-one {
+    top: 170px;
+    left: 220px;
+}
+
+.right__send-two {
+    top: 0;
+    left: 320px;
+}
+
+.send-one__text,
+.send-two__text {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 14px;
+    font-size: 13px;
+    font-weight: 700;
+    color: #4840bb;
+}
+
+.send-one__tittle,
+.send-two__tittle {
+    font-size: 16px;
+    line-height: 145%;
+    font-weight: 400;
+    color: #230b59;
+}
+
+
+.section-three {
+    position: relative;
+    display: flex;
+    min-height: 680px;
+}
+
+.section-three__image-phone {
+    position: absolute;
+    left: 440px;
+    top: -40px;
+
+}
+
+.section-three__image-card {
+    position: absolute;
+    top: 48px;
+    z-index: 999;
+    max-width: 44%;
+    height: auto;
+}
+
+.section-three__image-phone {
+    max-width: 32%;
+    height: auto;
+}
+
+.section-three__div-right {
+    position: absolute;
+    right: 0;
+    top: 100px;
+}
+
+.div-right__tittle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 49px;
+    line-height: 110%;
+    letter-spacing: 0.06em;
+    color: #230b59;
+}
+
+.div-right__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 144%;
+    color: #230b59;
+}
+
+.div-right__buttons-in-div {
+    margin-top: 20px;
+}
+
+.buttons-in-div__button-one {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+    background: #4840bb;
+    border-radius: 6px;
+    width: 126px;
+    height: 45px;
+    margin-right: 50px;
+}
+
+.buttons-in-div__button-two {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 144%;
+    color: #230b59;
+    background: transparent;
+}
+
+.background {
+    background: #4840bb;
+}
+
+.section-four {
+
+    display: flex;
+    justify-content: center;
+}
+
+.section-for__div-left-four {
+    margin-top: 80px;
+
+}
+
+.div-left-four__tittle {
+    font-family: var(--font-family);
+    font-weight: 400%;
+    font-size: 356%;
+    line-height: 96%;
+    letter-spacing: 0.05em;
+    color: #fff;
+}
+
+.div-left-four__text {
+    font-family: var(--font-family);
+    font-weight: 400%;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+    margin-top: 10px;
+}
+
+.section-four__div-right-four {
+    margin-top: 20px;
+    margin-left: 190px;
+
+}
+
+.section-four__div-right-four img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.background-dark-blue {
+    background: #230b59;
+    padding: 100px 0;
+}
+
+.section-five {}
+
+.container {}
+
+.section-five__box {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: -110px;
+
+}
+
+.box__div-one {
+    background: #ffffff;
+    padding: 30px;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 6px;
+
+}
+
+.div-one__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 140%;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #230b59;
+}
+
+.tittle__span {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #230b59;
+}
+
+.div-one__tittle {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: 0.03em;
+    color: #230b59;
+    margin: 30px 0;
+}
+
+.section-six {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-six__img {
+    max-width: 599px;
+    max-height: 599px;
+    animation: img 1.5s linear infinite alternate;
+
+}
+
+@keyframes img {
+    0% {
+    }
+
+    100% {transform: translateY(-20px);}
+}
+
+.section-six__img img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+}
+
+.section-six__tittle {
+
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 58px;
+    line-height: 93%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #230b59;
+}
+
+.tit__span {
+    font-family: var(--font-family);
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 93%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #230b59;
+}
+
+.section-six__btn {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 135%;
+    color: #fff;
+    background: #4840bb;
+    border-radius: 6px;
+    width: 120px;
+    height: 45px;
+    margin-top: 48px;
+}
+
+.section-six__container {}
+
+.container__text {
+    font-family: var(--font-family);
+    font-weight: 400;
+    font-size: 13px;
+    line-height: 118%;
+    letter-spacing: 0.11em;
+    text-align: center;
+    text-transform: uppercase;
+    color: #230b59;
+    margin-bottom: 26px;
+    margin-top: 96px;
+}
+
+.container__svg-div {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+
+/* Маленькі ноутбуки */
+@media (max-width: 1280px) {}
+
+/* Планшети горизонтально */
+@media (max-width: 1024px) {
+    .container {
+        padding-right: 28px;
+        padding-left: 28px;
+    }
+
+    .section-one__list-bottom {
+        flex-wrap: wrap;
+    }
+
+    .section-two {
+        gap: 40px;
+    }
+
+    .left__tittle {
+        font-size: 40px;
+    }
+
+    .section-four {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+}
+
+/* Планшети вертикально */
+@media (max-width: 768px) {
+
+    .container__svg-div{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    }
+
+    .section-four__div-right-four {
+        margin: 20px auto;
+    }
+
+    .header__nav-list {
+        gap: 20px;
+    }
+
+    .nav-list__item {
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .section-one__div-top {
+        flex-direction: column;
+    }
+
+    .div-top__left {
+        margin-right: 0;
+    }
+
+    .section-one__right {
+        margin-top: 48px;
+    }
+
+    .section-one__list-bottom {
+        align-items: flex-start;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px 24px;
+    }
+
+    .list-bottom__item {
+        margin: 20px 0;
+    }
+
+    .section-five__box {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .section-two {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .section-two__left,
+    .section-two__right {
+        flex-basis: auto;
+        width: 100%;
+    }
+
+    .right__send-one {
+        left: 3%;
+    }
+
+    .right__send-two {
+        right: 3%;
+    }
+
+    .section-two__right {
+        display: none;
+    }
+
+    .section-three {
+        min-height: 0;
+        flex-direction: column;
+        align-items: center;
+        gap: 28px;
+        padding-top: 40px;
+        padding-bottom: 56px;
+    }
+
+    .section-three__image-card,
+    .section-three__image-phone {
+        position: static;
+        max-width: 100%;
+        height: auto;
+    }
+
+    .section-three__image-card {
+        width: min(100%, 430px);
+        display: none;
+    }
+
+    .section-three__image-phone {
+        width: min(100%, 280px);
+    }
+
+    .section-three__div-right {
+        position: static;
+        width: 100%;
+    }
+
+    .div-right__tittle {
+        font-size: 40px;
+    }
+
+    .div-right__text br,
+    .div-right__tittle br {
+        display: none;
+    }
+
+    .div-right__buttons-in-div {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    .buttons-in-div__button-one {
+        margin-right: 0;
+    }
+
+
+}
+
+/* Великі телефони */
+@media (max-width: 576px) {
+    .header {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .header__nav-list {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .section-one {
+        padding-top: 20px;
+    }
+
+    .right__tittle,
+    .left__tittle {
+        font-size: 38px;
+    }
+
+    .left__text br,
+    .right__text br {
+        display: none;
+    }
+
+    .left__div-buttons {
+        flex-wrap: wrap;
+    }
+
+    .section-two__right {
+        padding: 25px 0 70px;
+    }
+
+    .section-three {
+        gap: 20px;
+        padding-top: 28px;
+    }
+
+    .div-right__tittle {
+        font-size: 36px;
+    }
+
+    .right__send-one,
+    .right__send-two {
+        padding: 12px 14px;
+    }
+
+    .send-one__tittle,
+    .send-two__tittle {
+        font-size: 13px;
+    }
+}
+
+/* Середні телефони */
+@media (max-width: 480px) {
+    .container {
+        padding-right: 16px;
+        padding-left: 16px;
+    }
+
+    .header__img {
+        width: 120px;
+    }
+
+    .header__btns {
+        gap: 8px;
+    }
+
+    .btns__button-one,
+    .btns__button-two {
+        padding: 10px;
+        font-size: 13px;
+    }
+
+    .btns__button-two {
+        width: 105px;
+    }
+
+    .section-one__list-bottom {
+        grid-template-columns: 1fr 1fr;
+        gap: 0 12px;
+    }
+
+    .right__send-one {
+        top: 4%;
+    }
+
+    .right__send-two {
+        bottom: 2%;
+    }
+}
+
+/* Маленькі телефони */
+@media (max-width: 375px) {
+    .header__btns {
+        width: 100%;
+    }
+
+    .btns__button-one,
+    .btns__button-two {
+        flex: 1;
+    }
+
+    .right__tittle,
+    .left__tittle {
+        font-size: 32px;
+    }
+
+    .section-one__list-bottom {
+        grid-template-columns: 1fr;
+    }
+}
